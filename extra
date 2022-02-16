@@ -1,0 +1,298 @@
+https://code.visualstudio.com/download
+https://nodejs.org/en/
+https://github.com/Aakashdeveloper
+https://github.com/
+
+Basic JavaScript
+Npm
+React = 3
+Mock API
+json-server
+React-JWT(Login Logout)-2
+Depolyment
+-> MERN
+-> Docker
+-> heroku
+-> Nginx
+React-GarphQL-1
+React_hooks -1
+Basic React Native=1
+React-Redux =1
+React-Redux =1
+Testing
+React-Saga -1
+//////////////////////
+Github
+React-with-typescript-1
+--------NOT--------------
+API
+GarphQL
+Login/Logout
+
+React
+> React is frontend lib that help to make single page application
+using component based structure
+
+SPA 
+
+npm => node package manager
+
+JSON => Way to represent data
+[
+    {
+        name:"John",
+        class:"React"
+    },
+     {
+        name:"Avi",
+        class:"Node"
+    }
+]
+
+>>>>>>>>
+Package.json
+How to install any package
+<<<<<<<<<<
+
+create-react-app
+////
+
+
+Package.json
+> Entry point to app
+> meta(description,version,name,author)
+> Scripts(start,test,build)
+> packages
+
+////////
+Step to generate Package.json
+///////////
+*NodeJs must be installed in your system
+> navigate to the folder using terminal/cmd
+> npm init 
+> answer all questions
+> type "yes"
+
+///////
+How to install any package
+///////
+>>Local Dependency
+  > specific to the app
+  > they are going to be used only in same app
+
+*NodeJs must be installed in your system
+> navigate to the folder using terminal/cmd
+> npm i package name
+
+/////
+Global Dependency
+> install in system irrespective of any folder
+> can be use by any application
+> need admin permission
+> only package that help to generate, build and test app
+
+//////////////////
+Generate React App
+////////////
+#window
+
+%One Time%
+> open cmd as admin
+> npm i -g create-react-app
+
+%Next all Time%
+> open cmd 
+> go inside folder
+> create-react-app appname
+
+#mac
+
+%One Time%
+> open terminal
+> sudo npm i -g create-react-app
+
+%Next all Time%
+> open terminal 
+> go inside folder
+> create-react-app appname
+
+//////////////////
+Run React App
+////////////
+> go inside the folder with cmd
+> npm start
+> localhost:3000
+
+
+Component
+
+Class
+> They are logical Component
+> They are heavy
+> We use them for api calling and writing all logics and data interaction 
+> Although we can do display also
+> we can define state
+---------------
+Functional
+> They are dumb component
+> They are mainly use for display purpose
+> we cannot define state
+
+
+HooksComponent
+
+npm i jest --save-dev
+
+State
+    > act like a local variable
+    > every class component can have its own state 
+    > we can update the value of state
+    > any data interction will happen through state
+Props
+    > help to transfer the data
+    > we cannot update the value of props
+    we props we can pass data through nested component
+
+filter in JavaScript
+indexof
+
+
+parent => child (simple props)
+child => parent (props with function (callback))
+
+function add(a,b){
+    return a+b
+}
+
+add(1,2)
+
+in parent write function
+in child call function
+
+npm i react-router-dom
+npm i bootstrap
+
+>
+something after / is params
+    > we need to mention in routes
+    > it is compuslory
+something after ? is queryParams
+    > No need to mention in routes
+    > optional
+
+default props
+history > for redirect
+location > for queryparams
+match > for params
+
+
+https://developerhotel.herokuapp.com/
+(get) hotels>         https://developerfunnel.herokuapp.com/hotels
+(get) hotelwrtcity >  https://developerfunnel.herokuapp.com/hotels?city=6
+(get) hoteldetails >  https://developerfunnel.herokuapp.com/hotelsdetails/1
+(get) onbasisoftrip > https://developerfunnel.herokuapp.com/hotellist/1
+(get) roomfilter >    https://developerfunnel.herokuapp.com/hotellist/1?roomtype=1
+(get) costfilter >    https://developerfunnel.herokuapp.com/hotellist/1?hcost=1000&lcost=500
+(get) cityname >      https://developerfunnel.herokuapp.com/location
+(get) rooms >         https://developerfunnel.herokuapp.com/rooms
+(get) triptype>       https://developerfunnel.herokuapp.com/booking
+(get) bookingdetails> https://developerfunnel.herokuapp.com/allBooking
+(post)placebooking >  https://developerfunnel.herokuapp.com/placeBook
+
+npm i react-router-dom react-slick react-tabs
+
+////
+dummy api
+/////
+> npm i -g json-server
+> json-server --watch db.json --port 8900
+
+
+https://www.postman.com/
+
+//////////////
+/******GetAllUser*****/
+(GET)> http://localhost:5000/api/auth/users
+
+/******Register*****/
+(POST)> http://localhost:5000/api/auth/register
+(body) => {"name":"Aakash", "email":"aa@gmail.com","password":"12345678","role":"user?"}
+
+
+/******Login*****/
+(POST) => http://localhost:5000/api/auth/login
+(body)  => {"email":"aa@gmail.com","password":"12345678"}
+(response)=> {auth:true,token:'dgsdg'}
+
+/******UserInfo*****/
+(GET) => http://localhost:5000/api/auth/userinfo
+(Header) => {'x-access-token':'token value from login'}
+(response) => {userinfo}
+
+https://www.youtube.com/watch?v=k4KZblj3QA0&t=2s
+https://www.youtube.com/watch?v=IAq5OO3U-9I&t=210s
+
+
+docker build . -t "jannode"
+docker run -p 8900:3000 jannode
+
+///first time from new folder/////
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/myreactjan.git
+git push -u origin master
+
+///Every time from same folder/////
+git add .
+git commit -m "first commit"
+git push
+
+///veryFirst time on project////
+git clone url
+
+npm i apollo-boost apollo-graphql graphql react-apollo
+
+>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<
+React Native
+>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<
+npm i -g create-react-native-app
+create-react-native-app appname
+
+mobile > expo
+ios> https://www.apple.com/in/search/expo?src=globalnav
+and > https://play.google.com/store/search?q=expo
+
+
+npm i react-redux  react-router-dom react-slick redux-logger redux-promise redux
+
+npm i enzyme enzyme-adapter-react-16  react-addons-test-utils react-test-renderer
+
+function loop(userInput){
+    for(i=0;i<userInput;i++){
+        console.log(i)
+    }
+}
+
+function * loop(userInput){
+    for(i=0;i<userInput;i++){
+        yield i
+    }
+}
+undefined
+loop(5)
+loop {<suspended>}
+var data = loop(5)
+undefined
+data.next()
+{value: 0, done: false}
+data.next()
+{value: 1, done: false}
+data.next()
+{value: 2, done: false}
+data.next()
+{value: 3, done: false}
+data.next()
+{value: 4, done: false}
+data.next()
+{value: undefined, done: true}
